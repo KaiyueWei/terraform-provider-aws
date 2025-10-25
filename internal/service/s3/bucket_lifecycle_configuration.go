@@ -53,8 +53,8 @@ import (
 func newBucketLifecycleConfigurationResource(context.Context) (resource.ResourceWithConfigure, error) {
 	r := &bucketLifecycleConfigurationResource{}
 
-	r.SetDefaultCreateTimeout(3 * time.Minute)
-	r.SetDefaultUpdateTimeout(3 * time.Minute)
+	r.SetDefaultCreateTimeout(10 * time.Minute)
+	r.SetDefaultUpdateTimeout(10 * time.Minute)
 
 	return r, nil
 }
